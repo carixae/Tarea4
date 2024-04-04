@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+<style>
+    
+    nav{
+       font-family: Arial, sans-serif;
+       color: blue;
+       text-decoration: underline;
+       background-color: lightgray;
+       border-radius: 10px;
+       width: auto;
+       box-sizing: border-box;
+       
+    }
+    ul{
+        display: flex; 
+        list-style: none; 
+        padding: 0px;
+    }
+    li{
+        margin: 10px;
+    }
+
+    .nav1 ul{
+        justify-content: flex-start;
+    }
+    .nav2 ul{
+        justify-content: center;
+    }
+    .nav3 ul{
+        justify-content: flex-end;
+    }
+    .nav4 {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        height: 70px;
+    }
+    
+    
+</style>    
+
+</head>
+<body>
+
+    <nav class="nav1"> 
+        <ul>
+            <li>Home</il>
+            <li> About</li>
+            <li> Sevices</li>
+            <li> Contact</li>
+        </ul> 
+    </nav>
+
+    <nav class="nav2"> 
+        <ul>
+            <li>Home</il>
+            <li> About</li>
+            <li> Sevices</li>
+            <li> Contact</li>
+        </ul> 
+    </nav>
+
+    <nav class="nav3"> 
+        <ul>
+            <li>Home</il>
+            <li> About</li>
+            <li> Sevices</li>
+            <li> Contact</li>
+        </ul> 
+    </nav>
+
+    <nav class="nav4"> 
+
+        <img src="https://picsum.photos/40/40.jpg" alt="imagen 40x40">
+        <ul>
+            <li>Home</il>
+            <li> About</li>
+            <li> Sevices</li>
+            <li> Contact</li>
+           
+        </ul> 
+    </nav>
+    
+</body>
+</html>

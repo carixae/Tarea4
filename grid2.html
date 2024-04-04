@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Estructura 2</title>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .formato{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            grid-template-areas: "header header header"
+            "aside1 main aside2"
+            "footer footer footer";
+           
+        }
+        header{
+            grid-area: header;
+            padding: 15px;
+            background-color: #9ea1d4;
+
+        }
+        main{
+            grid-area: main;
+            padding: 15px;
+            background-color: #fd8a8a;
+        }
+        .aside1{
+            grid-area: aside1;
+            padding: 15px;
+            background-color: #f1f7b5;
+        }
+        .aside2{
+            grid-area: aside2;
+            padding: 15px;
+            background-color: #f1f7b5;
+        }
+        footer{
+            grid-area: footer;
+            padding: 15px;
+            background-color: #a8d1d1
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header class="formato">Header</header>
+        <main class="formato">Contenido principal</main>
+        <aside class="aside1 formato">Aside 1</aside>
+        <aside class="aside2 formato">Aside 1</aside>
+        <footer class="formato">Footer</footer>
+    </div>
+    
+</body>
+</html>

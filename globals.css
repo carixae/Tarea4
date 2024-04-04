@@ -1,0 +1,115 @@
+/*-------------------------INCIALIZACION--------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+/*-------------------------CSS BODY--------------------------*/
+body{
+    
+    font-family: system-ui;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.borderadius{
+    border-radius: 15px; 
+}
+
+.card{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    padding: 15px;
+    filter: drop-shadow(0 0 0.25rem lightgray);
+   
+}
+.card img{
+    width: 300px;
+    height: 300px;
+ }
+
+.card h1{
+    margin: 20px 0px; /* margenes top-bottom 10px y margenes left-right 0px */
+    font-size: 20px;
+    color: darkslategray;
+}
+
+.card p{
+    color: gray;
+}
+
+/*-----------------------MINIREPRODUCTOR----------------------- */
+
+.repro{
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;  
+    width: 640px;
+    height: 302px;
+    border: solid 1px lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.elementoA{
+    
+    width: 300px;
+    position: absolute;
+    left: 0px;
+  
+
+}
+.elementoB{
+    
+    width: 300px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    text-align: left;
+    line-height: 1.5rem;
+    
+}
+
+.elementoB h1{
+    font-size: 16px;
+
+}
+
+.elementoB p{
+    font-size: 12px;
+}
+
+
+button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    align-items: centers;
+    background-color: whitesmoke;
+   
+}
+
+.elementoB ul{
+    width: 300px;
+    position: absolute;
+    left: 25%;
+    margin-top: 20px;
+}
+
+.borderimg{
+    border-radius:  15px 0px  0px 15px ;
+
+}
